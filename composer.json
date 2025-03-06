@@ -1,30 +1,11 @@
 {
-    "name": "axitbv/laravel-blueprint-streamlined-test-addon",
-    "description": "Swap Blueprint's TestGenerator with my own *too fancy* and *too specific*, *streamlined* tests for API Resource Controllers",
-    "keywords": [
-        "axitbv",
-        "laravel-blueprint-streamlined-test-addon"
-    ],
-    "homepage": "https://github.com/axitbv/laravel-blueprint-streamlined-test-addon",
-    "license": "MIT",
-    "type": "library",
     "authors": [
         {
-            "name": "Joost Jacobs",
             "email": "j.jacobs@xit.nl",
+            "name": "Joost Jacobs",
             "role": "Developer"
         }
     ],
-    "require": {
-        "php": "^7.3",
-        "illuminate/support": "^7.0|^8.0",
-        "jasonmccreary/laravel-test-assertions": "^1.0"
-    },
-    "require-dev": {
-        "laravel-shift/blueprint": "^1.14",
-        "orchestra/testbench": "^4.0|^5.0|^6.0",
-        "phpunit/phpunit": "^8.0|^9.0"
-    },
     "autoload": {
         "psr-4": {
             "Axitbv\\BlueprintStreamlinedTestAddon\\": "src"
@@ -35,21 +16,32 @@
             "Axitbv\\BlueprintStreamlinedTestAddon\\Tests\\": "tests"
         }
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "scripts": {
-        "test": "vendor/bin/phpunit",
-        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
-
-    },
     "config": {
         "sort-packages": true
     },
+    "description": "Swap Blueprint's TestGenerator with my own *too fancy* and *too specific*, *streamlined* tests for API Resource Controllers",
     "extra": {
         "laravel": {
             "providers": [
                 "Axitbv\\BlueprintStreamlinedTestAddon\\BlueprintStreamlinedTestAddonServiceProvider"
             ]
         }
-    }
+    },
+    "homepage": "https://github.com/axitbv/laravel-blueprint-streamlined-test-addon",
+    "keywords": [
+        "axitbv",
+        "laravel-blueprint-streamlined-test-addon"
+    ],
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "name": "axitbv/laravel-blueprint-streamlined-test-addon",
+    "prefer-stable": true,
+    "require": {
+        "jasonmccreary/laravel-test-assertions": "^1.0"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "type": "library"
 }
